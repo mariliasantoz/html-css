@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagem dinamica.</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente auemnte e diminua o tamanho do seu navegador.</p>
+
+    <!--tag PICTURE serve para inserir uma imagem, tag SOURCE para colocar as medidas flexíveis nas imagems.-->
+    <picture>
+
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel.">
+
+    </picture>
+
+
+    <h1>Rproduzindo Audio.</h1>
+    <p>Vamos aprender a reprodizir audios em html5.</p>
+
+<!--tag AUDIO para incluri musica no site, tag CONTROLS e AUTOPLAY-->
+    <audio src="midia/guanacast.mp3" controls autoplay></audio>
+    <audio 
+        preload="auto" autoplay controls loop
+        
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/audio.mp3" type="audio/mp3">
+        <source src="midia/audio.mpeg" type="audio/mpeg">
+
+        <P>seu navegador nao é compativel nao consegue reproduzir audio.</P>  
+        <p><a href="midia/happy-mistake.mp3" ></a>clique aqui para baixar o audio.</p>
+
+    </audio>
+    
+    
+    
+
+
+</body>
+</html>

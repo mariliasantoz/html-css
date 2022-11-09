@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*Em html é id = em css é # - so um elemento.
+  Em html é class = em css é . - varios elementos */
+
+body{
+    background-color: #008F8C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #023535;
+    text-decoration: underline;
+    
+}
+
+/*  SELETOR PERSOLIZADO.
+principal foi dado a um id dentro do html e referenciado aqui no css, para aplicar o estilo somente a esse h1. */
+
+h1#Principal{
+    text-align: center;
+    color: #023535;
+    background-color: #0FC2C0;
+    text-decoration: unset;
+    
+}
+
+h2{
+    color: #008F8C;
+    background-color:#0CABA8 ;
+}
+
+/* o uso do . com o nome dado na class do html faz referencia a configuração que sera aplicada aos titulos.*/
+.basico{
+    color: #19f0ec;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.intermediario{
+    color:#19f0ec;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.avançado{
+    color: #19f0ec;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.destaque{
+    background-color:#bee3e4;
+    font-weight: bold;
+}
+

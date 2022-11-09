@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+
+        body{
+            font-family: work Sans, Helvetica, sans-serif;
+
+            /*Medidas Absolutas: cm mm in (polegada) px, pt, pc.
+              Medidas Relativas: em (tamanha atual m da font) ex (tamanho da altura x da fonte), 
+            rem (relativo a fonte do body), vw (largura da tela em %), vh (altura da vw) */
+            
+            /*16px é o tamanho padrao da fonte. Geralmente igual a 1em */
+
+            /*usar sempre PX ou EM para os tamanhos de fontes*/ 
+            /*weight =peso, width=largura, height=altura.
+            lighter, normal, bold, bolder*/
+
+            font-size: 1em ; 
+            /*font-weight: lighter;
+            font-style: italic;
+            text-decoration: underline;*/
+
+            
+        }
+        
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /*shorthand font*/
+            /*font-style, font-weight, font-size, font-family*/
+
+           
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'work sans';
+        }
+
+    
+       
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius soluta perspiciatis labore iure dolore quos voluptatem beatae quaerat distinctio, eaque dicta. Culpa animi repellat itaque vel consequuntur error id excepturi?</p>
+
+    <h2>Subtitulo do exercício.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis fuga accusantium fugit architecto, harum dignissimos enim. Obcaecati amet vel quos qui. Illo libero aperiam est saepe maxime tempore natus.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa eveniet, minima laborum, placeat tempora officiis hic magnam mollitia voluptatum aperiam veniam earum eius praesentium inventore? Dolorum sequi recusandae tempore veritatis?</p>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+
+    <style>
+    /* 
+       SELETORES PERSONALIZADOS
+       
+       # = id
+       . = classe
+       : = pseudo-classe
+       :: = pseudo-element
+       > = children
+       
+    */
+
+
+        /*Pseudo CLASSE configura o estado atual do objeto/elemento*/
+        /*Pseudo ELEMENTO age nas classes, id, nos elementos, ele mexe no CONTEUDO do elemento.*/
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }   
+
+        /*Aqui esta a configuração geral / generica dos links. TEXT-DECORATION:NONE esta tirando o sublinhado de todo os botoes. FONT-WEIGHT: BOLD - esta tornando o que esta escrito em negrito.*/
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*Aqui foram mostrados as PSEUDO CLASSES visited - hover - active, que configuram os estados do objeto, como a(link) visited (msotra quando um link ja foi acessado, aqui ele altera a cor mostrada no botao do link.)*/
+        a:visited{
+            color: darkred;
+
+        }
+
+        /*Aqui a HOVER está configurada para mudar a cor do link (botao) e mostrar um sublinhado em baixo de onde passa o mouse. Esta tag faz mostrar coisas no objeto ao passar o mouse por cima.*/
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+
+        }
+        /*Aqui configura uma cor ao clicar no link(botao), ativo.*/
+        a:active{
+            color: yellowgreen;
+
+        }
+
+         /*pseudo classe (:) e para Pseudo Elemento (::) */
+        /*
+        a::before{
+            content:'☞ ' ;
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgreen;
+        } */
+
+        /*É como se ele acessasse a classe (a) e depois o elemento dela.*/
+      /*  a::after{
+            content:  ' ☜';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgreen;
+        }   */
+
+        .especial{
+            background-color: rgb(241, 190, 190);
+            
+        }
+
+        .especial::before{
+            content:'☞ ' ;
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgreen;
+        }
+
+        .especial::after{
+            content:  ' ☜';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgreen;
+        }
+
+ 
+
+    </style> 
+
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li> <a href="https://github.com/gustavoguanabara" target="_blank" class="especial"> Repositorio GitHub</a>.</li>
+
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" class="especial" >Canal do Youtube.</a></li>
+
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" >Site do Curso em video.</a></li> 
+
+    </ul>
+
+
+
+</body>
+</html>
